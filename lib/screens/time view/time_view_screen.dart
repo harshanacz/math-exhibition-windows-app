@@ -1,3 +1,5 @@
+import 'package:exh_project/models/mathematicianModel.dart';
+import 'package:exh_project/screens/profile%20view/profile_screen.dart';
 import 'package:exh_project/widgets/common/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -34,7 +36,9 @@ class _TimeViewScreenState extends State<TimeViewScreen> {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => TimeViewScreen()),
+                            builder: (context) =>
+                                MathematicianProfilePage(mathematician: newton),
+                          ),
                         );
                       },
                       child: Container(
